@@ -1,0 +1,9 @@
+[package]
+name = "zicklag/ulid_cli"
+version = "0.1.0"
+description = "Dead simple CLI for generating ULID identifiers."
+wasmer-extra-flags = "--enable-bulk-memory"
+
+[[module]]
+name = "ulid"
+source = "target/wasm32-wasi/release/ulid_cli.wasm"
